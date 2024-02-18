@@ -1,6 +1,6 @@
 const loginRouter = require('express').Router();
 const jwt     = require('jsonwebtoken');
-
+const registerModel = require('../models/registerModel')
 
 loginRouter.post('/',async(req,res)=>{
     const {email,password} = req.body;
