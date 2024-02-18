@@ -3,7 +3,7 @@ const registerModel = require('../models/registerModel');
 const registerRouter = require('express').Router();
 
 
-registerRouter.post("/register",async (req,res)=>{
+registerRouter.post("/",async (req,res)=>{
     try{
        const email = req.body.email;
        const password = req.body.password;
