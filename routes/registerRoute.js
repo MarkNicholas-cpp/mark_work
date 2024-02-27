@@ -14,11 +14,11 @@ registerRouter.post("/",async (req,res)=>{
        })
        console.log(email,password);
        await data.save();
-       res.status(200).send({response:'registered sucessfully'})
+       res.status(200).send({msg:'registered sucessfully'})
    }
     
    catch(e){
-       res.status(400).send({data:e});
+       res.status(400).send({msg:e});
        console.log('error',e);
    }
    
